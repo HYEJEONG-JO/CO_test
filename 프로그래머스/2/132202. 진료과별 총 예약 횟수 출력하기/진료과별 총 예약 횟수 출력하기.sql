@@ -1,5 +1,5 @@
-SELECT mcdp_cd, COUNT(*) AS appointment_count
+SELECT MCDP_CD, COUNT(*) AS appointment_count
 FROM APPOINTMENT
-WHERE apnt_ymd >= '2022-05-01' AND apnt_ymd <  '2022-06-01'
-GROUP BY mcdp_cd
-ORDER BY appointment_count ASC, mcdp_cd ASC;
+WHERE APNT_YMD >= '2022-05-01' AND APNT_YMD <  '2022-06-01'
+GROUP BY MCDP_CD
+ORDER BY appointment_count ASC, MCDP_CD ASC;
